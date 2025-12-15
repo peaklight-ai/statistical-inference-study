@@ -90,7 +90,7 @@ A reusable Claude skill has been created to maintain this architecture across al
 
 **Skill Name:** `statistical-inference-notebooks`
 
-**Location:** `/Users/chadiabifadel/.claude/skills/statistical-inference-notebooks/`
+**Location:** `.claude/skills/statistical-inference-notebooks/` (project-level)
 
 **Contents:**
 - `SKILL.md`: Complete workflow documentation with examples and anti-patterns
