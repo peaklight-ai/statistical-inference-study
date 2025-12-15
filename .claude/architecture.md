@@ -86,7 +86,29 @@ print(f"Bias: {bias:.4f} (≈ 0, confirming unbiasedness)")
 2. Demonstrate computationally
 3. Interpret what we observed
 
-**Rationale:** Students learn by doing. Code execution transforms abstract theory into concrete experience. Immediate feedback loop reinforces understanding and reveals when theory doesn't match intuition.
+**Math-to-Code Translation Comments**
+Every code cell implementing a mathematical concept MUST begin with a comment translating the notation:
+
+```python
+# E[θ̂] = θ: Average of estimates equals true parameter (unbiasedness)
+estimates = [population.rvs(30).mean() for _ in range(5000)]
+
+# Compute bias = E[θ̂] - θ
+bias = np.mean(estimates) - true_mu
+```
+
+**Translation Pattern:**
+- Start with the LaTeX formula: `E[θ̂] = θ`
+- Add plain English explanation: "Average of estimates equals true parameter"
+- Optionally add concept name in parentheses: "(unbiasedness)"
+
+**Why This Matters:**
+- Bridges abstract math and concrete code
+- Reduces cognitive switching cost between LaTeX and Python
+- Makes formulas immediately interpretable
+- Shows students "this line implements that formula"
+
+**Rationale:** Students learn by doing. Code execution transforms abstract theory into concrete experience. Immediate feedback loop reinforces understanding and reveals when theory doesn't match intuition. Translation comments ensure students always know which mathematical concept each code cell demonstrates.
 
 ### 4. Visualization Layer: Seeing is Understanding
 
