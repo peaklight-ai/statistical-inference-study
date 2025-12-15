@@ -1,21 +1,23 @@
 # Statistical Inference Exercises
 
-This directory contains practice exercises for each chapter of the Statistical Inference study material.
+This directory contains practice exercises for the Statistical Inference study material.
 
 ## Structure
 
-Each chapter has its own subdirectory containing:
-- **exercises.ipynb**: Jupyter notebook with exercise problems
-- **solutions.ipynb**: Complete solutions with explanations
-- **exercises.md**: Markdown version of exercises (optional, for easy reference)
+Exercise files will be organized as:
+- **chapter_01_exercises.ipynb**: Chapter 1 exercise problems
+- **chapter_01_solutions.ipynb**: Chapter 1 solutions with explanations
+- **chapter_02_exercises.ipynb**: Chapter 2 exercise problems
+- **chapter_02_solutions.ipynb**: Chapter 2 solutions with explanations
+- etc.
 
-## Available Chapters
+## Available Chapters for Exercises
 
-- **Chapter_01_Introduction**: Fundamental concepts, populations, samples, distributions
-- **Chapter_02_Properties_of_Estimators**: Bias, variance, efficiency, consistency, sufficiency
-- **Chapter_08_Nonparametric_Robust_Inference**: Non-parametric tests, robustness, bootstrap
-- **Chapter_09_Computationally_Intensive_Methods**: Monte Carlo, permutation tests, MCMC
-- **Chapter_10_Generalized_Linear_Models**: Logistic regression, Poisson regression, link functions
+- **Chapter 1**: Introduction - Fundamental concepts, populations, samples, distributions
+- **Chapter 2**: Properties of Estimators - Bias, variance, efficiency, consistency, sufficiency
+- **Chapter 8**: Nonparametric and Robust Inference - Non-parametric tests, robustness, bootstrap
+- **Chapter 9**: Computationally Intensive Methods - Monte Carlo, permutation tests, MCMC
+- **Chapter 10**: Generalized Linear Models - Logistic regression, Poisson regression, link functions
 
 ## Exercise Design Principles
 
@@ -27,8 +29,8 @@ Each chapter has its own subdirectory containing:
 
 ## How to Use
 
-1. Work through exercises.ipynb without looking at solutions
-2. Check your understanding against solutions.ipynb
+1. Work through chapter_XX_exercises.ipynb without looking at solutions
+2. Check your understanding against chapter_XX_solutions.ipynb
 3. Review cognitive_takeaways.md in the corresponding chapter folder for conceptual frameworks
 4. Experiment with variations and extensions of the exercises
 
