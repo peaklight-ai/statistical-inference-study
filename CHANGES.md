@@ -84,8 +84,43 @@ Students and practitioners seeking:
 - Interactive learning through Claude Code's code-along mode
 - Balance between mathematical rigor and intuitive understanding
 
+## Claude Skill Created
+
+A reusable Claude skill has been created to maintain this architecture across all notebooks:
+
+**Skill Name:** `statistical-inference-notebooks`
+
+**Location:** `/Users/chadiabifadel/.claude/skills/statistical-inference-notebooks/`
+
+**Contents:**
+- `SKILL.md`: Complete workflow documentation with examples and anti-patterns
+- `references/architecture.md`: Full architectural philosophy (4 layers, cognitive load management, design rationale)
+- `references/translation-guide.md`: 10 concrete examples of math-to-code translation comments
+- `scripts/validate_notebook.py`: Automated validation script that checks:
+  - No abbreviations in markdown
+  - Motivation paragraphs present
+  - 2-line code cell discipline
+  - Translation comments for formula implementations
+  - Translation comments follow pattern: `# [LaTeX]: [Plain English] ([Concept])`
+
+**Validation Results (Chapter 1):**
+- ✅ Script successfully identified 3 abbreviations needing replacement
+- ✅ Script found 44 code cells needing translation comments
+- Confirms skill is working as intended
+
+**Usage:**
+```bash
+python validate_notebook.py path/to/notebook.ipynb --fix-suggestions
+```
+
 ## Next Steps
 
+### Immediate Tasks
+1. Fix abbreviations identified by validation script (SE → Standard Error, MSE → Mean Squared Error)
+2. Add translation comments to existing code cells in Chapters 1 and 2
+3. Apply translation comment pattern: `# [LaTeX]: [Plain English] ([Concept])`
+
+### Future Chapters
 Chapter 3 onwards will follow the same enhanced format:
 - Maximum Likelihood Estimation
 - Hypothesis Testing
