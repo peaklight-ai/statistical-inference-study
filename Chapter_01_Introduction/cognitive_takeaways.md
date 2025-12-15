@@ -1,4 +1,4 @@
-# Cognitive Takeaways: Chapter 1
+# Cognitive Takeaways: Chapter 1 - Introduction to Statistical Inference
 
 ## Our Fundamental Limitation
 
@@ -7,9 +7,9 @@
 ## What We're Bad At (Without Tools)
 
 ### 1. Distinguishing Variability from Uncertainty
-- **Confusion:** SD (spread of data) vs SE (precision of estimate)
+- **Confusion:** Standard Deviation (spread of data) versus Standard Error (precision of estimate)
 - **Reality:** Large spread ≠ imprecise estimate if n is large
-- **Formula:** SE = σ/√n — our certainty grows with √n, not linearly
+- **Formula:** Standard Error = σ/√n — our certainty grows with √n, not linearly
 
 ### 2. Intuiting Sampling Distributions
 - **Bias:** Single sample feels definitive
@@ -24,11 +24,11 @@
 ### 4. Trusting Small Samples from Non-Normal Distributions
 - **Temptation:** "I have 10 data points, I'll compute a mean"
 - **Problem:** Without normality, small n gives unreliable inference
-- **CLT rescue:** Large n makes sampling distribution normal regardless
+- **Central Limit Theorem rescue:** Large n makes sampling distribution normal regardless
 
 ### 5. Quantifying "How Sure Am I?"
 - **Intuition fails:** "Pretty sure" is vague
-- **Statistics provides:** 95% CI, p-values, exact probabilities
+- **Statistics provides:** 95% Confidence Interval, p-values, exact probabilities
 - **Power:** Converts gut feeling to falsifiable claim
 
 ## What Statistical Thinking Gives Us
@@ -51,11 +51,11 @@
 ### 4. Understanding Bias-Variance Tradeoff
 - **Bias:** Systematic error (aiming wrong)
 - **Variance:** Random error (poor precision)
-- **MSE = Bias² + Variance:** Sometimes we accept bias to reduce variance
+- **Mean Squared Error = Bias² + Variance:** Sometimes we accept bias to reduce variance
 
-### 5. Leveraging the CLT
+### 5. Leveraging the Central Limit Theorem
 - **Human limitation:** Can't derive distributions for complex statistics
-- **CLT power:** For large n, X̄ is approximately normal — always
+- **Central Limit Theorem power:** For large n, X̄ is approximately normal — always
 - **Implication:** Normal theory applies far beyond normal data
 
 ## Core Cognitive Reframes
@@ -84,7 +84,7 @@
 
 ## Practical Wisdom
 
-1. **Never trust a point estimate without its SE**
+1. **Never trust a point estimate without its Standard Error**
 2. **Always ask: "What's the sampling distribution?"**
 3. **Distinguish parameters (unknown truths) from statistics (noisy estimates)**
 4. **Remember: Larger samples → better estimates, but with √n returns**
@@ -105,7 +105,7 @@
 
 ## Principle 1: Every Experience is One Sample
 
-**Statistical concept:** Sample vs Population
+**Statistical concept:** Sample versus Population
 
 **The bug:** You experience something once and generalize.
 **Example:** "This approach failed → This approach doesn't work"
@@ -125,7 +125,7 @@
 
 ## Principle 2: Separate Signal from Noise
 
-**Statistical concept:** Parameter θ vs Statistic θ̂
+**Statistical concept:** Parameter θ versus Statistic θ̂
 
 **The bug:** You mistake random variation for meaningful signal.
 **Example:** Sales dip one week → "Our strategy is failing"
@@ -145,7 +145,7 @@
 
 ## Principle 3: Quantify Your Uncertainty
 
-**Statistical concept:** Point estimate vs Confidence interval
+**Statistical concept:** Point estimate versus Confidence interval
 
 **The bug:** You express certainty you don't have.
 **Example:** "This will take 3 days" (reality: 1-7 days)
@@ -153,7 +153,7 @@
 **The fix:**
 - **ASK:** "What's my range of uncertainty?"
 - **DO:** Give intervals, not point predictions
-- **VALIDATE:** Track your predictions vs outcomes to calibrate
+- **VALIDATE:** Track your predictions versus outcomes to calibrate
 
 **Pattern + Validation:**
 - **Pattern:** "I think this will take 3 days"
@@ -199,13 +199,13 @@
 - **Pattern:** "This doesn't work" (based on n=2)
 - **Validation:** "Too small. Test 10-20 before concluding"
 
-**CLT wisdom:** Small samples from weird distributions are unreliable. Need large n to trust the pattern.
+**Central Limit Theorem wisdom:** Small samples from weird distributions are unreliable. Need large n to trust the pattern.
 
 ---
 
 ## Principle 6: Understand Speed-Precision Tradeoffs
 
-**Statistical concept:** Bias-Variance tradeoff (MSE = Bias² + Variance)
+**Statistical concept:** Bias-Variance tradeoff (Mean Squared Error = Bias² + Variance)
 
 **The bug:** You optimize for speed or perfection without recognizing the tradeoff.
 
@@ -221,13 +221,13 @@
 **Practical rule:**
 - Low stakes → Fast, higher-uncertainty decisions acceptable
 - High stakes → Slow down, gather more data to reduce uncertainty
-- **MSE wisdom:** Sometimes "roughly right fast" beats "precisely right slow"
+- **Mean Squared Error wisdom:** Sometimes "roughly right fast" beats "precisely right slow"
 
 ---
 
 ## Principle 7: Precision Grows Slowly (√n Law)
 
-**Statistical concept:** SE = σ/√n
+**Statistical concept:** Standard Error = σ/√n
 
 **The bug:** You think 2x the evidence makes you 2x more certain.
 **Reality:** Precision grows with √n, not n.
@@ -287,7 +287,7 @@
 
 1. **Pattern:** What do I think is true?
 2. **Sample size:** How much evidence do I have? (n=?)
-3. **Signal vs noise:** Is this persistent or random variation?
+3. **Signal versus noise:** Is this persistent or random variation?
 4. **Uncertainty:** What's my confidence range?
 5. **Test design:** What would disprove this?
 6. **Validation:** Run test. Compare to pre-defined criteria.
